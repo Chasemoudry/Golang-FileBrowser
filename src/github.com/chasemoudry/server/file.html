@@ -2,4 +2,7 @@
 
 <h2>{{.Title}}</h2>
 
-<div>{{printf "%s" .Body}}</div>
+<div>
+    <p>^<a href="/{{.ParentPath}}">Back</a></p>
+    <p>{{printf "%s" .Body}}</p>
+</div>
