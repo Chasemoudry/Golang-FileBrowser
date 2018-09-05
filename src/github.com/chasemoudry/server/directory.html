@@ -1,0 +1,8 @@
+<h1>{{.Path}}</h1>
+
+<h2>{{.Title}}</h2>
+
+<div>
+    <p>^<a href="/{{.ParentPath}}">Back</a></p>
+    <p>{{range .Dir}}-> <a href="/{{.FullPath}}">{{.SubPath}}</a><br>{{end}}</p>
+</div>
